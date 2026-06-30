@@ -1,0 +1,238 @@
+.company-wishlist-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 6px;
+    border: none;
+    background: none;
+    cursor: pointer;
+    color: #999;
+    transition: color 0.2s ease, transform 0.2s ease;
+    line-height: 1;
+}
+
+.company-wishlist-btn:hover {
+    color: #e74c3c;
+    transform: scale(1.15);
+}
+
+.company-wishlist-btn.is-active {
+    color: #e74c3c;
+}
+
+.company-wishlist-btn:disabled {
+    opacity: 0.5;
+    cursor: default;
+}
+
+/* Give card a positioning anchor so absolute heart button works */
+.book-card {
+    position: relative;
+}
+
+/* Loop button (shop page) */
+.company-wishlist-btn--loop {
+    position: absolute;
+    top: 8px;
+    right: 8px;
+    z-index: 10;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+}
+
+.company-wishlist-btn--loop:hover {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Single product page button */
+.company-wishlist-btn--single {
+    font-size: 14px;
+    gap: 6px;
+    padding: 8px 16px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    background: #fff;
+}
+
+.company-wishlist-btn--single:hover {
+    border-color: #e74c3c;
+    background: #fff5f5;
+}
+
+/* Remove button in wishlist table */
+.company-wishlist-btn--remove {
+    color: #e74c3c;
+}
+
+/* Wishlist table */
+.company-wishlist-table .product-thumbnail img {
+    max-width: 80px;
+    height: auto;
+}
+
+.company-wishlist-table .product-remove {
+    text-align: center;
+}
+
+/* Mobile: simple card — no image, just name, price, add-to-cart, remove */
+@media (max-width: 768px) {
+    .company-wishlist-table thead {
+        display: none;
+    }
+
+    .shop_table.company-wishlist-table tbody tr {
+        display: block;
+        position: relative;
+        padding: 14px 52px 14px 14px !important;
+        margin-bottom: 10px !important;
+        border: 1px solid var(--color-border, #C1C7DF) !important;
+        border-radius: var(--radius-md, 12px) !important;
+        background: var(--color-card-bg, #ffffff) !important;
+    }
+
+    .shop_table.company-wishlist-table tbody tr:last-child {
+        margin-bottom: 0 !important;
+    }
+
+    .shop_table.company-wishlist-table td {
+        display: block !important;
+        padding: 3px 0 !important;
+        border: none !important;
+        font-size: 13px !important;
+        justify-content: initial !important;
+        align-items: initial !important;
+        vertical-align: initial !important;
+    }
+
+    .shop_table.company-wishlist-table td::before {
+        content: attr(data-title) ": ";
+        font-weight: 600;
+        color: var(--color-heading, #3760BF);
+    }
+
+    /* Hide thumbnail */
+    .shop_table.company-wishlist-table td.product-thumbnail {
+        display: none !important;
+    }
+
+    /* Name */
+    .shop_table.company-wishlist-table td.product-name {
+        font-size: 14px !important;
+        font-weight: 600;
+        padding-right: 8px;
+    }
+
+    .shop_table.company-wishlist-table td.product-name::before {
+        content: none;
+    }
+
+    .shop_table.company-wishlist-table td.product-name a {
+        color: var(--color-heading, #3760BF);
+        text-decoration: none;
+    }
+
+    /* Price */
+    .shop_table.company-wishlist-table td.product-price {
+        font-size: 15px !important;
+        font-weight: 700;
+        color: var(--color-heading, #3760BF);
+    }
+
+    .shop_table.company-wishlist-table td.product-price::before {
+        content: none;
+    }
+
+    /* Remove button top-right */
+    .shop_table.company-wishlist-table td.product-remove {
+        position: absolute !important;
+        top: 8px !important;
+        right: 8px !important;
+        padding: 0 !important;
+    }
+
+    .shop_table.company-wishlist-table td.product-remove::before {
+        content: none;
+    }
+
+    .company-wishlist-btn--remove {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 36px;
+        height: 36px;
+        padding: 0;
+        border-radius: 50%;
+        background: rgba(231, 76, 60, 0.1);
+        color: #e74c3c;
+        transition: background 0.2s;
+    }
+
+    .company-wishlist-btn--remove:hover {
+        background: rgba(231, 76, 60, 0.2);
+    }
+
+    .company-wishlist-btn--remove svg {
+        width: 18px;
+        height: 18px;
+    }
+
+    /* Add to Cart: full width below */
+    .shop_table.company-wishlist-table td.product-add-to-cart {
+        margin-top: 8px !important;
+        padding-top: 10px !important;
+        border-top: 1px solid var(--color-border, #C1C7DF) !important;
+    }
+
+    .shop_table.company-wishlist-table td.product-add-to-cart::before {
+        content: none;
+    }
+
+    .shop_table.company-wishlist-table td.product-add-to-cart .add_to_cart_button,
+    .shop_table.company-wishlist-table td.product-add-to-cart .button {
+        display: block;
+        width: 100%;
+        text-align: center;
+        padding: 11px 16px;
+        font-size: 14px;
+        font-weight: 600;
+        border-radius: var(--radius-sm, 6px);
+        background: var(--accent, #f0883e);
+        color: #fff;
+        text-decoration: none;
+        transition: opacity 0.2s;
+        border: none;
+        cursor: pointer;
+    }
+
+    .shop_table.company-wishlist-table td.product-add-to-cart .add_to_cart_button:hover,
+    .shop_table.company-wishlist-table td.product-add-to-cart .button:hover {
+        opacity: 0.9;
+    }
+
+    .shop_table.company-wishlist-table td.product-add-to-cart .add_to_cart_button.loading {
+        opacity: 0.6;
+    }
+}
+
+@media (max-width: 400px) {
+    .shop_table.company-wishlist-table tbody tr {
+        padding: 12px 48px 12px 12px !important;
+    }
+
+    .shop_table.company-wishlist-table td.product-name {
+        font-size: 13px !important;
+    }
+
+    .shop_table.company-wishlist-table td.product-price {
+        font-size: 14px !important;
+    }
+
+    .shop_table.company-wishlist-table td.product-add-to-cart .add_to_cart_button,
+    .shop_table.company-wishlist-table td.product-add-to-cart .button {
+        padding: 10px 12px;
+        font-size: 13px;
+    }
+}

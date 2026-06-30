@@ -1,0 +1,143 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: Company WooCommerce\n"
+"POT-Creation-Date: 2026-01-26\n"
+"PO-Revision-Date: 2026-01-26\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: manual\n"
+
+#: Wishlist/AjaxHandler.php:20
+msgid "Please log in to use wishlist."
+msgstr "Vui lòng đăng nhập để sử dụng danh sách yêu thích."
+
+#: Wishlist/AjaxHandler.php:25
+msgid "Invalid product."
+msgstr "Sản phẩm không hợp lệ."
+
+#: Wishlist/AjaxHandler.php:53
+msgid "Please log in."
+msgstr "Vui lòng đăng nhập."
+
+#: Wishlist/AccountPage.php:29 Wishlist/Frontend.php:33 Wishlist/Frontend.php:48
+msgid "Wishlist"
+msgstr "Yêu Thích"
+
+#: Wishlist/AccountPage.php:60
+msgid "Your wishlist is empty"
+msgstr "Danh sách yêu thích của bạn đang trống"
+
+#: Wishlist/AccountPage.php:61
+msgid "Save your favorite books here."
+msgstr "Lưu những cuốn sách yêu thích tại đây."
+
+#: Wishlist/AccountPage.php:62
+msgid "Browse Books"
+msgstr "Duyệt Sách"
+
+#: Wishlist/AccountPage.php:87
+msgid "Remove from Wishlist"
+msgstr "Xóa khỏi Yêu Thích"
+
+#: Wishlist/AccountPage.php:108
+msgid "Add to Cart"
+msgstr "Thêm Vào Giỏ Hàng"
+
+#: Wishlist/Frontend.php:33 Wishlist/Frontend.php:48
+msgid "Toggle Wishlist"
+msgstr "Chuyển Đổi Yêu Thích"
+
+#: Wishlist/Frontend.php:61
+msgid "Wishlist (%d)"
+msgstr "Yêu Thích (%d)"
+
+#: Filter/AdminPage.php:100
+msgid "Filter Settings"
+msgstr "Cài Đặt Bộ Lọc"
+
+#: Filter/AdminPage.php:105
+msgid "Enabled Filters"
+msgstr "Bộ Lọc Đã Kích Hoạt"
+
+#: Filter/AdminPage.php:121
+msgid "Product Attributes"
+msgstr "Thuộc Tính Sản Phẩm"
+
+#: Filter/AdminPage.php:123
+msgid "Chọn attribute cụ thể để hiển thị trong filter."
+msgstr "Chọn thuộc tính cụ thể để hiển thị trong bộ lọc."
+
+#: Core/AdminPage.php:62
+msgid "Company Modules"
+msgstr "Module Company"
+
+#: Core/AdminPage.php:74
+msgid "Enable"
+msgstr "Kích Hoạt"
+
+#: Core/AdminPage.php:84
+msgid "Hướng dẫn sử dụng"
+msgstr "Hướng dẫn sử dụng"
+
+#: ZaloContact/AdminPage.php
+msgid "Zalo Contact"
+msgstr "Liên Hệ Zalo"
+
+msgid "Zalo Contact Settings"
+msgstr "Cài Đặt Liên Hệ Zalo"
+
+msgid "Zalo Phone Number"
+msgstr "Số Điện Thoại Zalo"
+
+msgid "Default Message"
+msgstr "Tin Nhắn Mặc Định"
+
+msgid "Display on Pages"
+msgstr "Hiển Thị Trên Trang"
+
+msgid "Button Position"
+msgstr "Vị Trí Nút"
+
+msgid "Hide on Mobile"
+msgstr "Ẩn Trên Di Động"
+
+msgid "Enter your Zalo phone number (e.g. 84912345678)."
+msgstr "Nhập số điện thoại Zalo của bạn (vd: 84912345678)."
+
+msgid "Default message sent when clicking Zalo button."
+msgstr "Tin nhắn mặc định gửi khi nhấn nút Zalo."
+
+msgid "Show on all pages"
+msgstr "Hiển thị trên tất cả trang"
+
+msgid "Show only on selected pages"
+msgstr "Chỉ hiển thị trên trang được chọn"
+
+msgid "Homepage (Front Page)"
+msgstr "Trang Chủ"
+
+msgid "No pages found."
+msgstr "Không tìm thấy trang nào."
+
+msgid "Select specific pages where the Zalo button should appear."
+msgstr "Chọn các trang cụ thể nơi nút Zalo sẽ xuất hiện."
+
+msgid "Bottom Right"
+msgstr "Góc Phải Dưới"
+
+msgid "Bottom Left"
+msgstr "Góc Trái Dưới"
+
+msgid "Top Right"
+msgstr "Góc Phải Trên"
+
+msgid "Top Left"
+msgstr "Góc Trái Trên"
+
+msgid "Hide the Zalo button on mobile devices."
+msgstr "Ẩn nút Zalo trên thiết bị di động."

@@ -1,0 +1,190 @@
+/* HERO - Hero Section */
+
+/* Dark mode hero aurora */
+body.theme-dark .hero {
+  background: linear-gradient(135deg, #1A1B26 0%, #1F2235 40%, #24283B 100%);
+}
+
+body.theme-dark .hero::after {
+  background:
+    radial-gradient(ellipse at 25% 15%, rgba(122, 162, 247, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 30%, rgba(187, 154, 247, 0.14) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 85%, rgba(125, 207, 255, 0.1) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 70%, rgba(240, 136, 62, 0.06) 0%, transparent 50%);
+}
+
+body.theme-dark .hero h1 span {
+  background: linear-gradient(135deg, #7AA2F7, #BB9AF7);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+/* ========================================
+   HERO — Split Layout
+========================================= */
+.hero {
+  position: relative;
+  padding: 140px 0 100px;
+  background: linear-gradient(135deg, var(--page-bg) 0%, var(--color-border) 100%);
+  overflow: hidden;
+}
+
+/* Aurora flowing background */
+.hero::after {
+  content: '';
+  position: absolute;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  background:
+    radial-gradient(ellipse at 25% 15%, rgba(46, 125, 233, 0.18) 0%, transparent 55%),
+    radial-gradient(ellipse at 75% 30%, rgba(152, 84, 241, 0.14) 0%, transparent 55%),
+    radial-gradient(ellipse at 50% 85%, rgba(45, 156, 219, 0.1) 0%, transparent 55%),
+    radial-gradient(ellipse at 15% 70%, rgba(240, 136, 62, 0.06) 0%, transparent 50%);
+  animation: aurora 14s cubic-bezier(0.45, 0.05, 0.55, 0.95) infinite alternate;
+}
+
+@keyframes aurora {
+  0% { transform: translate(0, 0) scale(1); opacity: 0.7; }
+  25% { transform: translate(1.5%, -1.2%) scale(1.05); opacity: 1; }
+  50% { transform: translate(-1%, 1.8%) scale(0.95); opacity: 0.8; }
+  75% { transform: translate(1.2%, 0.5%) scale(1.02); opacity: 0.9; }
+  100% { transform: translate(-0.8%, -0.5%) scale(0.98); opacity: 0.75; }
+}
+
+.hero .container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 60px;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+}
+
+.hero-content {
+  max-width: 540px;
+}
+
+.hero h1 {
+  font-size: 64px;
+  font-weight: 800;
+  line-height: 1.06;
+  letter-spacing: -1.5px;
+  color: var(--color-heading, #3760BF);
+  margin-bottom: 24px;
+}
+
+.hero h1 span {
+  background: linear-gradient(135deg, var(--tn-blue), var(--tn-purple));
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.hero p {
+  font-size: 18px;
+  color: var(--color-body, #6172B0);
+  line-height: 1.7;
+  margin-bottom: 32px;
+  max-width: 460px;
+}
+
+.hero-actions {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.hero .btn-cta {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  position: relative;
+  overflow: hidden;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.hero .btn-cta:hover {
+  background: var(--accent-hover);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(240, 136, 62, 0.4);
+}
+
+.hero .btn-cta:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+.hero .btn-secondary {
+  background: transparent;
+  color: var(--deep-lake);
+  border: 1px solid var(--deep-lake);
+}
+
+.hero .btn-secondary:hover {
+  background: rgba(87, 128, 152, 0.08);
+  border-color: var(--deep-lake);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(87, 128, 152, 0.12);
+}
+
+.hero .btn-secondary:active {
+  transform: translateY(0);
+}
+
+/* Hero Visual */
+.hero-visual {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  will-change: transform;
+}
+
+.hero-visual svg {
+  width: 100%;
+  max-width: 480px;
+  height: auto;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+/* Hero overlay when background image is set */
+.hero.hero-has-bg::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.45);
+  z-index: 1;
+  pointer-events: none;
+}
+
+.hero.hero-has-bg .hero-content,
+.hero.hero-has-bg .hero-visual {
+  position: relative;
+  z-index: 2;
+}
+
+.hero.hero-has-bg h1 span {
+  background: none;
+  -webkit-text-fill-color: currentColor;
+  color: inherit;
+}
+
+.hero-visual .hero-banner-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: var(--radius-lg, 20px);
+  min-height: 360px;
+  max-height: 520px;
+  animation: none;
+}
+
+/* ========================================== */
+

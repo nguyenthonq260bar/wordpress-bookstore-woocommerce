@@ -1,0 +1,159 @@
+/* ========================================
+   BUTTONS
+========================================= */
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+  padding: 14px 32px;
+  font-size: 15px;
+  font-weight: 600;
+  border-radius: var(--radius-md, 12px);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font);
+}
+
+.btn-primary {
+  background: transparent;
+  color: var(--color-heading, #3760BF);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: 10px 24px;
+  border-radius: var(--radius-sm, 6px);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    border-color 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease,
+    box-shadow 0.2s ease;
+}
+
+.btn-primary:hover {
+  border-color: var(--glacier-blue);
+  color: var(--glacier-blue);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+}
+
+.btn-primary:active {
+  transform: translateY(0);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  transition: background 0.25s ease, border-color 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-secondary:hover {
+  background: rgba(255, 255, 255, 0.1);
+  border-color: rgba(255, 255, 255, 0.5);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 16px rgba(255, 255, 255, 0.08);
+}
+
+.btn-secondary:active {
+  transform: translateY(0);
+}
+
+.btn-cta {
+  background: var(--accent);
+  color: var(--white);
+  border: none;
+  transition: background 0.25s ease, transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.btn-cta:hover {
+  background: var(--accent-hover);
+  transform: translateY(-3px) scale(1.03);
+  box-shadow: 0 8px 32px rgba(240, 136, 62, 0.35);
+}
+
+.btn-cta:active {
+  transform: translateY(-1px) scale(0.98);
+}
+
+/* ========================================
+   OVERLAY BUTTONS
+========================================= */
+.overlay-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-sm, 6px);
+  text-decoration: none;
+  transition: all 0.25s ease;
+  cursor: pointer;
+  border: none;
+  transform: translateY(10px);
+  opacity: 0;
+}
+
+.book-card:hover .overlay-btn,
+.recommended-card:hover .overlay-btn {
+  transform: translateY(0);
+  opacity: 1;
+}
+
+.book-card:hover .overlay-btn:nth-child(2),
+.recommended-card:hover .overlay-btn:nth-child(2) {
+  transition-delay: 0.06s;
+}
+
+.overlay-btn--cart {
+  background: rgba(255, 255, 255, 0.95);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--black);
+}
+
+.overlay-btn--cart:hover {
+  background: var(--glacier-blue);
+  color: var(--white);
+  transform: translateY(-1px);
+}
+
+.overlay-btn--view {
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--white);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.overlay-btn--view:hover {
+  background: rgba(255, 255, 255, 0.25);
+  color: var(--white);
+  border-color: rgba(255, 255, 255, 0.6);
+}
+
+body.theme-dark .overlay-btn--cart {
+  background: rgba(36, 40, 59, 0.92);
+  color: #C0CAF5;
+}
+
+body.theme-dark .overlay-btn--cart:hover {
+  background: #7AA2F7;
+  color: #1A1B26;
+}
+
+body.theme-dark .overlay-btn--view {
+  background: rgba(36, 40, 59, 0.7);
+  color: #C0CAF5;
+  border-color: rgba(192, 202, 245, 0.25);
+}
+
+body.theme-dark .overlay-btn--view:hover {
+  background: rgba(36, 40, 59, 0.9);
+  color: #C0CAF5;
+  border-color: rgba(192, 202, 245, 0.5);
+}
+

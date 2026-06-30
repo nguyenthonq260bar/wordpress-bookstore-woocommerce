@@ -1,0 +1,2591 @@
+/* WOO ACCOUNT */
+
+body.theme-dark .myaccount-content .woocommerce-orders-table th {
+  background: var(--gray-100);
+  color: var(--gray-500);
+}
+
+body.theme-dark .myaccount-content .woocommerce-orders-table tbody tr:hover td {
+  background: rgba(var(--glacier-blue-rgb), 0.06);
+}
+
+body.theme-dark .checkout-payment-methods .payment_box {
+  background: var(--gray-100);
+}
+
+body.theme-dark
+  .myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-pending {
+  background: rgba(var(--tn-orange-rgb), 0.2);
+  color: var(--tn-orange);
+}
+
+body.theme-dark
+  .myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-processing {
+  background: rgba(var(--tn-blue-rgb), 0.2);
+  color: var(--tn-blue);
+}
+
+body.theme-dark
+  .myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-completed {
+  background: rgba(var(--tn-green-rgb), 0.2);
+  color: var(--tn-green);
+}
+
+body.theme-dark
+  .myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-on-hold {
+  background: rgba(var(--tn-orange-rgb), 0.2);
+  color: var(--tn-orange);
+}
+
+body.theme-dark
+  .myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-cancelled {
+  background: rgba(var(--tn-red-rgb), 0.2);
+  color: var(--tn-red);
+}
+
+body.theme-dark
+  .myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-refunded {
+  background: rgba(var(--tn-purple-rgb), 0.2);
+  color: var(--tn-purple);
+}
+
+body.theme-dark
+  .myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-failed {
+  background: rgba(var(--tn-red-rgb), 0.2);
+  color: var(--tn-red);
+}
+
+body.theme-dark .order-status-badge.status-completed {
+  background: rgba(var(--tn-green-rgb), 0.2);
+  color: var(--tn-green);
+}
+
+body.theme-dark .order-status-badge.status-processing {
+  background: rgba(var(--tn-blue-rgb), 0.2);
+  color: var(--tn-blue);
+}
+
+body.theme-dark .order-status-badge.status-pending {
+  background: rgba(var(--tn-orange-rgb), 0.2);
+  color: var(--tn-orange);
+}
+
+body.theme-dark .order-status-badge.status-on-hold {
+  background: rgba(var(--tn-orange-rgb), 0.2);
+  color: var(--tn-orange);
+}
+
+body.theme-dark .order-status-badge.status-cancelled {
+  background: rgba(var(--tn-red-rgb), 0.2);
+  color: var(--tn-red);
+}
+
+body.theme-dark .order-status-badge.status-refunded {
+  background: rgba(var(--tn-purple-rgb), 0.2);
+  color: var(--tn-purple);
+}
+
+body.theme-dark .order-status-badge.status-failed {
+  background: rgba(var(--tn-red-rgb), 0.2);
+  color: var(--tn-red);
+}
+
+/* ========================================
+   MY ACCOUNT — Premium Dashboard
+========================================= */
+
+.myaccount-dashboard {
+  max-width: 100%;
+}
+
+/* --- Top Tab Navigation --- */
+.myaccount-tabs {
+  margin-bottom: 32px;
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  overflow: hidden;
+}
+
+.myaccount-tabs ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.myaccount-tabs li {
+  margin: 0;
+}
+
+.myaccount-tabs li a {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 14px 14px;
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-body, #6172B0);
+  text-decoration: none;
+  position: relative;
+  white-space: nowrap;
+}
+
+.myaccount-tabs li a::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  width: 0;
+  height: 2px;
+  background: linear-gradient(90deg, var(--glacier-blue), var(--tn-purple));
+  border-radius: 1px 1px 0 0;
+  transition: width 0.25s ease, left 0.25s ease;
+}
+
+.myaccount-tabs li a:hover {
+  color: var(--glacier-blue);
+  background: rgba(var(--glacier-blue-rgb), 0.04);
+}
+
+.myaccount-tabs li a:hover::after {
+  width: 60%;
+  left: 20%;
+}
+
+.myaccount-tabs li.is-active a {
+  color: var(--glacier-blue);
+  font-weight: 600;
+  background: rgba(var(--glacier-blue-rgb), 0.06);
+}
+
+.myaccount-tabs li.is-active a::after {
+  width: 100%;
+  left: 0;
+}
+
+.myaccount-tab-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  flex-shrink: 0;
+}
+
+.myaccount-tab-icon svg {
+  width: 100%;
+  height: 100%;
+}
+
+.myaccount-tab-label {
+  line-height: 1;
+}
+
+.myaccount-tabs li.woocommerce-MyAccount-navigation-link--customer-logout {
+  margin-left: auto;
+}
+
+.myaccount-tabs li.woocommerce-MyAccount-navigation-link--customer-logout a {
+  color: var(--error);
+}
+
+.myaccount-tabs li.woocommerce-MyAccount-navigation-link--customer-logout a::after {
+  display: none;
+}
+
+.myaccount-tabs li.woocommerce-MyAccount-navigation-link--customer-logout a:hover {
+  background: rgba(214, 66, 66, 0.06);
+}
+
+/* --- Content Area --- */
+.myaccount-content {
+  min-width: 0;
+}
+
+/* Welcome (legacy — .myaccount-welcome still used by some templates) */
+.myaccount-welcome {
+  margin-bottom: 32px;
+}
+
+.myaccount-welcome-title {
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 var(--space-1, 6px);
+  letter-spacing: -0.3px;
+  overflow-wrap: break-word;
+  word-break: break-word;
+}
+
+.myaccount-welcome-sub {
+  font-size: 15px;
+  color: var(--color-body, #6172B0);
+  margin: 0;
+}
+
+.myaccount-welcome-date {
+  font-size: 14px;
+  color: var(--gray-500);
+  margin-top: 8px;
+}
+
+/* Hero (replaces welcome on dashboard) */
+.myaccount-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+}
+
+.myaccount-hero-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.myaccount-hero-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.myaccount-hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.myaccount-hero-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 4px;
+  letter-spacing: -0.5px;
+}
+
+.myaccount-hero-sub {
+  font-size: 15px;
+  color: var(--color-body, #6172B0);
+  margin: 0;
+}
+
+.myaccount-hero-date {
+  font-size: 14px;
+  color: var(--gray-500);
+  text-align: right;
+}
+
+body.theme-dark .myaccount-hero {
+  background: var(--color-card-bg, #24283B);
+  border-color: var(--color-border, #2F3650);
+}
+
+body.theme-dark .myaccount-hero-title {
+  color: var(--color-heading, #C0CAF5);
+}
+
+body.theme-dark .myaccount-hero-sub {
+  color: var(--color-body, #A9B1D6);
+}
+
+body.theme-dark .myaccount-hero-date {
+  color: var(--gray-500);
+}
+
+/* Hero */
+.myaccount-hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 32px;
+  padding: 24px;
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+}
+
+.myaccount-hero-info {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.myaccount-hero-avatar {
+  width: 56px;
+  height: 56px;
+  border-radius: 50%;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.myaccount-hero-avatar img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.myaccount-hero-title {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 4px;
+  letter-spacing: -0.5px;
+}
+
+.myaccount-hero-sub {
+  font-size: 15px;
+  color: var(--color-body, #6172B0);
+  margin: 0;
+}
+
+.myaccount-hero-date {
+  font-size: 14px;
+  color: var(--gray-500);
+  text-align: right;
+}
+
+/* Dark mode */
+body.theme-dark .myaccount-hero {
+  background: var(--color-card-bg, #24283B);
+  border-color: var(--color-border, #2F3650);
+}
+
+body.theme-dark .myaccount-hero-title {
+  color: var(--color-heading, #C0CAF5);
+}
+
+body.theme-dark .myaccount-hero-sub {
+  color: var(--color-body, #A9B1D6);
+}
+
+body.theme-dark .myaccount-hero-date {
+  color: var(--gray-500);
+}
+
+/* Dark mode — tabs */
+body.theme-dark .myaccount-tabs {
+  background: var(--color-card-bg, #24283B);
+  border-color: var(--color-border, #2F3650);
+}
+
+body.theme-dark .myaccount-tabs li a {
+  color: var(--color-body, #A9B1D6);
+}
+
+body.theme-dark .myaccount-tabs li a::after {
+  background: linear-gradient(90deg, #7AA2F7, #BB9AF7);
+}
+
+body.theme-dark .myaccount-tabs li a:hover {
+  color: var(--glacier-blue);
+  background: rgba(var(--glacier-blue-rgb), 0.08);
+}
+
+body.theme-dark .myaccount-tabs li.is-active a {
+  color: var(--glacier-blue);
+  background: rgba(var(--glacier-blue-rgb), 0.12);
+}
+
+body.theme-dark .myaccount-tabs li.woocommerce-MyAccount-navigation-link--customer-logout a {
+  color: var(--error);
+}
+
+body.theme-dark .myaccount-tabs li.woocommerce-MyAccount-navigation-link--customer-logout a:hover {
+  background: rgba(214, 66, 66, 0.12);
+}
+
+/* Dark mode — stat cards */
+body.theme-dark .myaccount-stat-card {
+  background: var(--color-card-bg, #24283B);
+  border-color: var(--color-border, #2F3650);
+}
+
+body.theme-dark .myaccount-stat-value {
+  color: var(--color-heading, #C0CAF5);
+}
+
+body.theme-dark .myaccount-stat-label {
+  color: var(--color-body, #A9B1D6);
+}
+
+body.theme-dark .myaccount-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.2), 0 12px 32px rgba(0,0,0,0.3);
+}
+
+/* Dark mode — sections */
+body.theme-dark .myaccount-section {
+  background: var(--color-card-bg, #24283B);
+  border-color: var(--color-border, #2F3650);
+}
+
+body.theme-dark .myaccount-section-header h2 {
+  color: var(--color-heading, #C0CAF5);
+}
+
+/* Stats Widgets */
+.myaccount-stats {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 16px;
+  margin-bottom: 32px;
+}
+
+.myaccount-stat-card {
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: var(--space-5, 20px);
+  display: flex;
+  align-items: center;
+  gap: var(--space-4, 16px);
+  transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease;
+}
+
+.myaccount-stat-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06), 0 12px 32px rgba(40,53,67,0.08);
+  border-color: var(--gray-200);
+}
+
+.myaccount-stat-icon {
+  width: 44px;
+  height: 44px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.myaccount-stat-card:hover .myaccount-stat-icon {
+  transform: scale(1.1);
+}
+
+.stat-icon-orders {
+  background: rgba(94, 135, 167, 0.1);
+  color: var(--glacier-blue);
+}
+
+.stat-icon-books {
+  background: rgba(16, 185, 129, 0.1);
+  color: #10b981;
+}
+
+.stat-icon-spent {
+  background: rgba(139, 92, 246, 0.1);
+  color: #7c3aed;
+}
+
+.stat-icon-hours {
+  background: rgba(240, 136, 62, 0.1);
+  color: #f0883e;
+}
+
+.myaccount-stat-body {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
+.myaccount-stat-value {
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  line-height: 1.1;
+}
+
+.myaccount-stat-label {
+  font-size: 13px;
+  color: var(--color-body, #6172B0);
+}
+
+/* Sections */
+.myaccount-section {
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: var(--space-6, 24px);
+  margin-bottom: var(--space-6, 24px);
+}
+
+.myaccount-section-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+.myaccount-section-header h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0;
+}
+
+.myaccount-section-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--glacier-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.myaccount-section-link:hover {
+  color: var(--deep-lake);
+}
+
+.myaccount-section-count {
+  font-size: 14px;
+  color: var(--gray-500);
+}
+
+/* Orders List */
+.myaccount-orders-list {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+}
+
+.myaccount-order-item {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-4, 16px) 0;
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+}
+
+.myaccount-order-item:last-child {
+  border-bottom: none;
+}
+
+.myaccount-order-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.myaccount-order-number {
+  font-size: 15px;
+  font-weight: 600;
+  color: var(--color-heading, #3760BF);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.myaccount-order-number:hover {
+  color: var(--glacier-blue);
+}
+
+.myaccount-order-date {
+  font-size: 13px;
+  color: var(--gray-500);
+}
+
+.myaccount-order-meta {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.myaccount-order-status {
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 4px 12px;
+  border-radius: 100px;
+}
+
+.status-completed {
+  background: rgba(16, 185, 129, 0.1);
+  color: #059669;
+}
+
+.status-processing {
+  background: rgba(var(--glacier-blue-rgb), 0.1);
+  color: var(--glacier-blue);
+}
+
+.status-on-hold {
+  background: rgba(251, 191, 36, 0.1);
+  color: #d46a3a;
+}
+
+.status-pending {
+  background: rgba(245, 158, 11, 0.1);
+  color: #d46a3a;
+}
+
+.status-cancelled {
+  background: rgba(214, 66, 66, 0.1);
+  color: #dc2626;
+}
+
+.status-refunded {
+  background: rgba(139, 92, 246, 0.1);
+  color: #7c3aed;
+}
+
+.status-failed {
+  background: rgba(214, 66, 66, 0.08);
+  color: #dc2626;
+}
+
+.myaccount-order-total {
+  font-size: 15px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  white-space: nowrap;
+}
+
+/* Books Grid */
+.myaccount-books-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  gap: var(--space-4, 16px);
+}
+
+.myaccount-book-card {
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  overflow: hidden;
+  border: 1px solid var(--color-border, #C1C7DF);
+  transition: transform 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+  position: relative;
+}
+
+.myaccount-book-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08), 0 2px 6px rgba(0, 0, 0, 0.04);
+  border-color: var(--gray-200, #D6DAE8);
+}
+
+.myaccount-book-remove {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  z-index: 2;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(0,0,0,0.08);
+  color: var(--gray-500, #7C88B8);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  transition: opacity 0.2s, color 0.2s, background 0.2s;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.myaccount-book-card:hover .myaccount-book-remove {
+  opacity: 1;
+}
+
+.myaccount-book-remove:hover {
+  color: var(--error, #F7768E);
+  background: #fff;
+  border-color: var(--error, #F7768E);
+}
+
+.myaccount-book-cover {
+  display: block;
+  width: 100%;
+  aspect-ratio: 3/4;
+  position: relative;
+  overflow: hidden;
+  background: var(--cover-bg, linear-gradient(135deg, var(--glacier-blue), var(--deep-lake)));
+}
+
+.myaccount-book-cover-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transition: transform 0.4s ease;
+}
+
+.myaccount-book-card:hover .myaccount-book-cover-img {
+  transform: scale(1.05);
+}
+
+.myaccount-book-info {
+  padding: 10px 12px 12px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.myaccount-book-title {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-heading, #3760BF);
+  line-height: 1.35;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  overflow-wrap: anywhere;
+}
+
+.myaccount-book-title a {
+  color: inherit;
+  text-decoration: none;
+}
+
+.myaccount-book-title a:hover {
+  color: var(--glacier-blue, #2E7DE9);
+}
+
+.myaccount-book-price {
+  font-size: 14px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  line-height: 1.3;
+}
+
+.myaccount-book-price del {
+  color: var(--gray-500, #7C88B8);
+  font-size: 11px;
+  font-weight: 400;
+  margin-right: 4px;
+}
+
+.myaccount-book-price ins {
+  text-decoration: none;
+  color: var(--accent, #F0883E);
+  font-weight: 700;
+}
+
+.myaccount-book-price .woocommerce-Price-amount {
+  white-space: nowrap;
+}
+
+/* Empty state */
+.myaccount-empty {
+  text-align: center;
+  padding: 40px 20px;
+}
+
+.myaccount-empty p {
+  font-size: 15px;
+  color: var(--gray-500);
+  margin: 0;
+}
+
+.myaccount-empty a {
+  color: var(--glacier-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.myaccount-empty a:hover {
+  color: var(--deep-lake);
+}
+
+/* Hide old WooCommerce MyAccount elements */
+.woocommerce-MyAccount-navigation,
+.woocommerce-MyAccount-content {
+  display: none;
+}
+
+/* WooCommerce content inside My Account */
+.myaccount-content .woocommerce-order-details {
+  margin-top: var(--space-6, 24px);
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: var(--space-6, 24px);
+  margin-bottom: var(--space-6, 24px);
+}
+
+.myaccount-content .woocommerce-order-details h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 var(--space-5, 20px);
+}
+
+.myaccount-content .woocommerce-table--order-details th {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-body, #6172B0);
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: var(--space-3, 12px) 0;
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+}
+
+.myaccount-content .woocommerce-table--order-details td {
+  padding: var(--space-3, 12px) 0;
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+  font-size: 14px;
+  color: var(--color-heading, #3760BF);
+}
+
+.myaccount-content .woocommerce-customer-details {
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: var(--space-6, 24px);
+}
+
+.myaccount-content .woocommerce-customer-details h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 var(--space-4, 16px);
+}
+
+.myaccount-content address {
+  font-style: normal;
+  font-size: 14px;
+  color: var(--color-body, #6172B0);
+  line-height: 1.8;
+}
+
+.myaccount-content .woocommerce-orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  overflow: hidden;
+}
+
+.myaccount-content .woocommerce-orders-table th {
+  background: #f8fafc;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--gray-500);
+  text-align: left;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+}
+
+.myaccount-content .woocommerce-orders-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: var(--color-heading, #3760BF);
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+  transition: background 0.2s ease;
+}
+
+.myaccount-content .woocommerce-orders-table tbody tr {
+  transition: background 0.2s ease;
+}
+
+.myaccount-content .woocommerce-orders-table tbody tr:hover td {
+  background: rgba(var(--glacier-blue-rgb), 0.03);
+}
+
+.myaccount-content .woocommerce-orders-table td a {
+  color: var(--glacier-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.myaccount-content .woocommerce-orders-table td a:hover {
+  color: var(--deep-lake);
+}
+
+.myaccount-content .woocommerce-orders-table__cell-order-actions {
+  white-space: nowrap;
+}
+
+.myaccount-content .woocommerce-orders-table td a.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  margin: 3px;
+  padding: 6px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: 8px;
+  background: var(--glacier-blue);
+  color: var(--white);
+  text-decoration: none;
+  transition: var(--transition);
+  border: none;
+  cursor: pointer;
+}
+
+.myaccount-content .woocommerce-orders-table td a.button:hover {
+  background: var(--deep-lake);
+  color: var(--white);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+}
+
+/* Order status badges */
+.myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.3px;
+  line-height: 1;
+}
+
+.myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-pending {
+  background: rgba(var(--tn-orange-rgb), 0.12);
+  color: var(--tn-orange);
+}
+
+.myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-processing {
+  background: rgba(var(--tn-blue-rgb), 0.12);
+  color: var(--tn-blue);
+}
+
+.myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-completed {
+  background: rgba(var(--tn-green-rgb), 0.12);
+  color: var(--tn-green);
+}
+
+.myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-on-hold {
+  background: rgba(var(--tn-orange-rgb), 0.12);
+  color: var(--tn-orange);
+}
+
+.myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-cancelled {
+  background: rgba(var(--tn-red-rgb), 0.12);
+  color: var(--tn-red);
+}
+
+.myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-refunded {
+  background: rgba(var(--tn-purple-rgb), 0.12);
+  color: var(--tn-purple);
+}
+
+.myaccount-content
+  .woocommerce-orders-table__cell-order-status
+  mark.order-status.status-failed {
+  background: rgba(var(--tn-red-rgb), 0.12);
+  color: var(--tn-red);
+}
+
+.myaccount-content .woocommerce button.button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font);
+  background: var(--glacier-blue);
+  color: var(--white);
+  text-decoration: none;
+}
+
+.myaccount-content .woocommerce button.button:hover {
+  background: var(--deep-lake);
+  transform: translateY(-1px);
+}
+
+.myaccount-content .woocommerce-Addresses {
+  margin-top: var(--space-6, 24px);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: var(--space-6, 24px);
+}
+
+.myaccount-content .woocommerce-Address {
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: var(--space-6, 24px);
+}
+
+.myaccount-content .woocommerce-Address h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 var(--space-3, 12px);
+}
+
+.myaccount-content .woocommerce-Address address {
+  margin-top: var(--space-6, 24px);
+  font-style: normal;
+  font-size: 14px;
+  color: var(--color-body, #6172B0);
+  line-height: 1.8;
+  margin-bottom: var(--space-4, 16px);
+}
+
+.myaccount-content .woocommerce-Address .edit {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--glacier-blue);
+  text-decoration: none;
+}
+
+.myaccount-content .woocommerce-Address .edit:hover {
+  color: var(--deep-lake);
+}
+
+/* ========================================
+   VIEW ORDER
+========================================= */
+.view-order-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: var(--space-4, 16px);
+  margin-bottom: var(--space-6, 24px);
+  padding-bottom: var(--space-6, 24px);
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+}
+
+.view-order-header h2 {
+  font-size: 24px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0;
+}
+
+.order-status-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 6px 16px;
+  border-radius: 100px;
+  font-size: 13px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.order-status-badge.status-completed {
+  background: rgba(var(--tn-green-rgb), 0.12);
+  color: var(--tn-green);
+}
+
+.order-status-badge.status-processing {
+  background: rgba(var(--tn-blue-rgb), 0.12);
+  color: var(--tn-blue);
+}
+
+.order-status-badge.status-pending {
+  background: rgba(var(--tn-orange-rgb), 0.12);
+  color: var(--tn-orange);
+}
+
+.order-status-badge.status-on-hold {
+  background: rgba(var(--tn-orange-rgb), 0.12);
+  color: var(--tn-orange);
+}
+
+.order-status-badge.status-cancelled {
+  background: rgba(var(--tn-red-rgb), 0.12);
+  color: var(--tn-red);
+}
+
+.order-status-badge.status-refunded {
+  background: rgba(var(--tn-purple-rgb), 0.12);
+  color: var(--tn-purple);
+}
+
+.order-status-badge.status-failed {
+  background: rgba(var(--tn-red-rgb), 0.12);
+  color: var(--tn-red);
+}
+
+.view-order-info {
+  font-size: 15px;
+  color: var(--color-body, #6172B0);
+  margin-bottom: var(--space-6, 24px);
+}
+
+.view-order-info mark {
+  background: none;
+  color: var(--color-heading, #3760BF);
+  font-weight: 600;
+}
+
+.view-order-notes {
+  background: var(--color-card-bg, #ffffff);
+  border: 1px solid var(--color-border, #C1C7DF);
+  border-radius: var(--radius-md, 12px);
+  padding: var(--space-6, 24px);
+  margin-top: var(--space-6, 24px);
+}
+
+.view-order-notes h2 {
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 var(--space-4, 16px);
+}
+
+.woocommerce-OrderUpdates {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.woocommerce-OrderUpdate {
+  padding: var(--space-4, 16px) 0;
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+}
+
+.woocommerce-OrderUpdate:last-child {
+  border-bottom: none;
+}
+
+.woocommerce-OrderUpdate-meta {
+  font-size: 13px;
+  color: var(--color-body, #6172B0);
+  font-weight: 500;
+}
+
+.woocommerce-OrderUpdate-description {
+  margin-top: var(--space-2, 8px);
+  font-size: 14px;
+  color: var(--color-heading, #3760BF);
+  line-height: 1.6;
+}
+
+/* ========================================
+   ORDERS — FLAT CARD LAYOUT
+========================================= */
+.orders-card-grid {
+  display: grid;
+  gap: var(--space-3, 12px);
+}
+
+.order-card {
+  background: var(--color-card-bg, #ffffff);
+  border: 1px solid var(--color-border, #C1C7DF);
+  border-radius: var(--radius-md, 12px);
+  padding: var(--space-5, 20px) var(--space-6, 24px);
+  transition:
+    box-shadow 0.2s ease,
+    border-color 0.2s ease;
+}
+
+.order-card:hover {
+  border-color: var(--glacier-blue);
+  box-shadow: var(--shadow-card, 0 8px 24px rgba(40, 53, 67, 0.08));
+}
+
+.order-card-row {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-2, 8px);
+}
+
+.order-card-row + .order-card-row {
+  margin-top: var(--space-3, 12px);
+}
+
+.order-card-row--primary {
+  justify-content: space-between;
+}
+
+.order-card-row--actions {
+  justify-content: flex-end;
+  gap: var(--space-3, 12px);
+}
+
+.order-card-meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-2, 8px);
+}
+
+.order-card-sep {
+  color: var(--color-border, #C1C7DF);
+  font-size: 14px;
+}
+
+.order-card-number {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.order-card-number:hover {
+  color: var(--glacier-blue);
+}
+
+.order-card-meta time {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-body, #6172B0);
+}
+
+.order-card-total-line {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--color-heading, #3760BF);
+}
+
+.order-card-custom-line {
+  font-size: 14px;
+  color: var(--color-body, #6172B0);
+}
+
+.order-card-action {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 6px 18px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-sm, 6px);
+  text-decoration: none;
+  transition:
+    background 0.2s,
+    color 0.2s;
+  cursor: pointer;
+}
+
+.order-card-action--view {
+  background: var(--glacier-blue);
+  color: var(--white);
+}
+
+.order-card-action--view:hover {
+  background: var(--deep-lake);
+  color: var(--white);
+}
+
+.order-card-action--pay {
+  background: var(--black);
+  color: var(--white);
+}
+
+.order-card-action--pay:hover {
+  background: var(--gray-900);
+  color: var(--white);
+}
+
+.order-card-action--cancel {
+  background: transparent;
+  color: var(--error);
+  border: 1px solid var(--error);
+}
+
+.order-card-action--cancel:hover {
+  background: rgba(var(--error-rgb), 0.06);
+}
+
+.orders-pagination {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-4, 16px);
+  padding-top: var(--space-8, 32px);
+}
+
+.orders-pagination .btn-outline {
+  background: transparent;
+  color: var(--color-heading, #3760BF);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: 10px 24px;
+  border-radius: var(--radius-sm, 6px);
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.orders-pagination .btn-outline:hover {
+  border-color: var(--glacier-blue);
+  color: var(--glacier-blue);
+}
+
+.orders-empty {
+  text-align: center;
+  padding: var(--space-10, 40px);
+}
+
+.orders-empty p {
+  font-size: 16px;
+  color: var(--color-body, #6172B0);
+  margin-bottom: var(--space-6, 24px);
+}
+
+/* ========================================
+   WISHLIST
+========================================= */
+.company-wishlist-wrap {
+  padding: 0;
+}
+.company-wishlist-wrap .company-wishlist-title {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 var(--space-5, 20px);
+  padding-bottom: var(--space-4, 16px);
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+}
+.company-wishlist-wrap .company-wishlist-empty {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+}
+.company-wishlist-wrap .company-wishlist-empty p {
+  font-size: 15px;
+  color: var(--color-body, #6172B0);
+  margin: 0 0 var(--space-5, 20px);
+}
+.company-wishlist-wrap .company-wishlist-empty a {
+  color: var(--glacier-blue);
+  font-weight: 600;
+  text-decoration: none;
+}
+.company-wishlist-wrap .company-wishlist-empty a:hover {
+  color: var(--deep-lake);
+}
+.company-wishlist-wrap table.shop_table.company-wishlist-table {
+  border: 1px solid var(--color-border, #C1C7DF);
+  border-radius: var(--radius-md, 12px);
+  overflow: hidden;
+  background: var(--color-card-bg, #ffffff);
+}
+.company-wishlist-wrap table.shop_table.company-wishlist-table thead th {
+  background: var(--gray-100);
+  padding: 14px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: var(--color-body, #6172B0);
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+}
+.company-wishlist-wrap table.shop_table.company-wishlist-table td {
+  padding: 16px 20px;
+  font-size: 14px;
+  color: var(--color-heading, #3760BF);
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+  vertical-align: middle;
+}
+.company-wishlist-wrap table.shop_table.company-wishlist-table tbody tr:last-child td {
+  border-bottom: none;
+}
+.company-wishlist-wrap table.shop_table.company-wishlist-table td.product-thumbnail {
+  width: 80px;
+}
+.company-wishlist-wrap table.shop_table.company-wishlist-table td.product-thumbnail img {
+  width: 55px;
+  height: auto;
+  border-radius: var(--radius-sm, 6px);
+}
+.company-wishlist-wrap table.shop_table.company-wishlist-table td.product-name a {
+  font-weight: 600;
+  color: var(--color-heading, #3760BF);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+.company-wishlist-wrap table.shop_table.company-wishlist-table td.product-name a:hover {
+  color: var(--glacier-blue);
+}
+.company-wishlist-wrap .company-stock-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 12px;
+  border-radius: 100px;
+  font-size: 12px;
+  font-weight: 600;
+  line-height: 1;
+}
+.company-wishlist-wrap .company-stock-badge.in-stock {
+  background: rgba(var(--tn-green-rgb), 0.12);
+  color: var(--tn-green);
+}
+.company-wishlist-wrap .company-stock-badge.out-of-stock {
+  background: rgba(var(--tn-red-rgb), 0.12);
+  color: var(--tn-red);
+}
+.company-wishlist-wrap table.shop_table td.product-actions {
+  white-space: nowrap;
+  text-align: right;
+  padding-top: 49px;
+}
+.company-wishlist-wrap table.shop_table td.product-actions .button {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  font-size: 13px;
+  font-weight: 600;
+  border-radius: var(--radius-sm, 6px);
+  border: none;
+  cursor: pointer;
+  transition: var(--transition);
+  font-family: var(--font);
+  background: var(--glacier-blue);
+  color: var(--white);
+  text-decoration: none;
+  vertical-align: middle;
+  margin: 0;
+}
+.company-wishlist-wrap table.shop_table td.product-actions .button:hover {
+  background: var(--deep-lake);
+  transform: translateY(-1px);
+  box-shadow: var(--shadow-sm);
+  color: var(--white);
+}
+.company-wishlist-wrap table.shop_table td.product-actions .button svg {
+  flex-shrink: 0;
+}
+.company-wishlist-wrap table.shop_table td.product-actions .company-wishlist-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 36px;
+  height: 36px;
+  padding: 0;
+  border-radius: 50%;
+  background: transparent;
+  border: 1px solid var(--color-border, #C1C7DF);
+  color: var(--tn-red);
+  font-size: 18px;
+  cursor: pointer;
+  transition: all 0.2s;
+  flex-shrink: 0;
+  line-height: 1;
+  vertical-align: middle;
+  margin: 0 0 0 8px;
+}
+.company-wishlist-wrap table.shop_table td.product-actions .company-wishlist-btn:hover {
+  background: rgba(var(--tn-red-rgb), 0.08);
+  border-color: var(--tn-red);
+  transform: scale(1.08);
+}
+
+@media (max-width: 768px) {
+  .company-wishlist-wrap table.shop_table.company-wishlist-table thead { display: none; }
+  .company-wishlist-wrap table.shop_table.company-wishlist-table tbody tr {
+    display: block;
+    padding: 16px;
+    border-bottom: 1px solid var(--color-border, #C1C7DF);
+  }
+  .company-wishlist-wrap table.shop_table.company-wishlist-table tbody tr:last-child { border-bottom: none; }
+  .company-wishlist-wrap table.shop_table.company-wishlist-table td {
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    border: none;
+    font-size: 13px;
+  }
+  .company-wishlist-wrap table.shop_table.company-wishlist-table td::before {
+    content: attr(data-title);
+    flex: 0 0 80px;
+    font-weight: 600;
+    font-size: 12px;
+    color: var(--color-body, #6172B0);
+    text-transform: uppercase;
+    letter-spacing: 0.3px;
+  }
+  .company-wishlist-wrap table.shop_table.company-wishlist-table td.product-thumbnail {
+    display: none;
+  }
+  .company-wishlist-wrap table.shop_table td.product-actions {
+    flex-wrap: nowrap;
+  }
+}
+
+/* ========================================
+   EDIT ACCOUNT / EDIT ADDRESS — Form Styles
+========================================= */
+.myaccount-form {
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-md, 12px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: var(--space-6, 24px);
+}
+
+.myaccount-form h2 {
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 var(--space-6, 24px);
+  padding-bottom: var(--space-4, 16px);
+  border-bottom: 1px solid var(--color-border, #C1C7DF);
+}
+
+.myaccount-form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4, 16px);
+  margin-bottom: var(--space-4, 16px);
+}
+
+.myaccount-form-row .form-row-wide {
+  grid-column: 1 / -1;
+}
+
+.myaccount-form-row .form-row {
+  margin: 0;
+  padding: 0;
+}
+
+/* Grid wrapper for WooCommerce address fields */
+.myaccount-form-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-4, 16px);
+}
+
+.myaccount-form-grid .form-row {
+  margin: 0;
+  padding: 0;
+  float: none;
+  clear: none;
+  width: auto;
+}
+
+.myaccount-form-grid .form-row-wide {
+  grid-column: 1 / -1;
+}
+
+.myaccount-form-grid .form-row-first {
+  grid-column: 1;
+}
+
+.myaccount-form-grid .form-row-last {
+  grid-column: 2;
+}
+
+/* Section divider (password change) */
+.myaccount-form-section {
+  margin-top: var(--space-6, 24px);
+  padding-top: var(--space-6, 24px);
+  border-top: 1px solid var(--color-border, #C1C7DF);
+}
+
+.myaccount-form-section h3 {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--color-heading, #3760BF);
+  margin: 0 0 var(--space-2, 8px);
+}
+
+.myaccount-form-hint {
+  font-size: 13px;
+  color: var(--color-body, #6172B0);
+  font-style: italic;
+  margin-top: var(--space-1, 4px);
+  display: block;
+}
+
+.myaccount-form-hint em {
+  font-style: italic;
+}
+
+/* Generic form labels & inputs inside myaccount-form */
+.myaccount-form label,
+.myaccount-form .form-row label {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--color-body, #6172B0);
+  margin-bottom: var(--space-1, 6px);
+}
+
+.myaccount-form input[type="text"],
+.myaccount-form input[type="email"],
+.myaccount-form input[type="password"],
+.myaccount-form input[type="tel"],
+.myaccount-form input[type="number"],
+.myaccount-form select,
+.myaccount-form textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border: 1px solid var(--color-border, #C1C7DF);
+  border-radius: var(--radius-sm, 6px);
+  font-size: 14px;
+  font-family: var(--font);
+  color: var(--color-heading, #3760BF);
+  background: var(--white);
+  transition:
+    border-color 0.2s,
+    box-shadow 0.2s;
+  box-sizing: border-box;
+}
+
+.myaccount-form input:focus,
+.myaccount-form select:focus,
+.myaccount-form textarea:focus {
+  outline: none;
+  border-color: var(--glacier-blue);
+  box-shadow: 0 0 0 3px rgba(var(--glacier-blue-rgb), 0.1);
+}
+
+.myaccount-form select {
+  appearance: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("data:image/svg+xml,%3Csvg width='12' height='8' viewBox='0 0 12 8' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath d='M1 1.5L6 6.5L11 1.5' stroke='%236172B0' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E%0A");
+  background-repeat: no-repeat;
+  background-position: right 14px center;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.myaccount-form .required {
+  color: var(--error);
+  border: none;
+}
+
+.myaccount-form-actions {
+  display: flex;
+  justify-content: flex-end;
+  padding-top: var(--space-5, 20px);
+  margin-top: var(--space-5, 20px);
+  border-top: 1px solid var(--color-border, #C1C7DF);
+}
+
+.myaccount-form-actions .btn-primary,
+.myaccount-form-actions button[type="submit"] {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 24px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm, 6px);
+  background: transparent;
+  color: var(--color-heading, #3760BF);
+  border: 1px solid var(--color-border, #C1C7DF);
+  cursor: pointer;
+  text-decoration: none;
+  transition:
+    border-color 0.2s,
+    color 0.2s;
+}
+
+.myaccount-form-actions .btn-primary:hover,
+.myaccount-form-actions button[type="submit"]:hover {
+  border-color: var(--glacier-blue);
+  color: var(--glacier-blue);
+  background: transparent;
+  transform: none;
+  box-shadow: none;
+}
+
+/* Address page header alignment */
+.myaccount-content .woocommerce-Address-title {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.myaccount-content .woocommerce-Address-title .edit {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--glacier-blue);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.myaccount-content .woocommerce-Address-title .edit:hover {
+  color: var(--deep-lake);
+}
+
+/* WooCommerce field validation inside forms */
+.myaccount-form .woocommerce-invalid input,
+.myaccount-form .woocommerce-invalid select {
+  border-color: var(--error);
+  box-shadow: 0 0 0 3px rgba(var(--error-rgb), 0.1);
+}
+
+.myaccount-form .woocommerce-validated input {
+  border-color: var(--success, #9ECE6A);
+}
+
+.woocommerce form.login,
+.woocommerce form.register {
+  max-width: 480px;
+  background: var(--color-card-bg, #ffffff);
+  border-radius: var(--radius-lg, 20px);
+  border: 1px solid var(--color-border, #C1C7DF);
+  padding: var(--space-8, 32px);
+}
+
+.woocommerce form.login p:first-child,
+.woocommerce form.register p:first-child {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .myaccount-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .myaccount-books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .myaccount-tabs ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .myaccount-tabs ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .myaccount-tabs li a {
+    padding: 12px 16px;
+    font-size: 13px;
+  }
+
+  .myaccount-content .woocommerce-orders-table__cell-order-actions {
+    white-space: normal;
+  }
+
+  .myaccount-stats {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .myaccount-books-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .myaccount-form-row,
+  .myaccount-form-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .myaccount-order-item {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 8px;
+  }
+
+  .woocommerce .col2-set {
+    flex-direction: column;
+    gap: 24px;
+  }
+
+  .woocommerce .col2-set .col-1,
+  .woocommerce .col2-set .col-2 {
+    width: 100%;
+    float: none;
+    flex: none;
+  }
+
+  .product-detail {
+    grid-template-columns: 1fr !important;
+    gap: 32px !important;
+  }
+
+  .product-gallery {
+    position: static !important;
+  }
+
+  .product-thumbnails {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .product-summary {
+    padding: var(--space-5, 20px);
+  }
+
+  .product-title {
+    font-size: 28px;
+  }
+
+  .product-price {
+    font-size: 24px;
+  }
+
+  .product-summary .tag {
+    font-size: 11px;
+    padding: 3px 10px;
+  }
+
+  .woocommerce .product-add-to-cart .cart .button {
+    min-width: 0;
+    flex: none;
+    width: 100%;
+  }
+
+  .woocommerce-variation-add-to-cart .button {
+    min-width: 0;
+    flex: none;
+    width: 100%;
+  }
+
+.filter-bar-sections {
+    gap: 16px 24px;
+  }
+
+  /* Strip borders — flat mobile layout */
+  .myaccount-tabs {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    min-width: 0;
+    overflow: hidden;
+  }
+
+  .myaccount-hero {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 16px 0;
+    margin-bottom: 20px;
+  }
+
+  .myaccount-stat-card {
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+  }
+
+  .myaccount-stat-card:hover {
+    transform: none;
+    box-shadow: none;
+  }
+
+  .myaccount-section {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 16px 0;
+    margin-bottom: 16px;
+  }
+
+  .myaccount-form {
+    border: none;
+    border-radius: 0;
+    background: transparent;
+    padding: 16px 0;
+  }
+
+  .myaccount-section-header h2 {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 480px) {
+  .content-card {
+    overflow: hidden;
+  }
+
+  .product-title {
+    font-size: 22px;
+  }
+
+  .product-price {
+    font-size: 20px;
+  }
+
+  .product-summary {
+    padding: 16px;
+  }
+
+  .product-thumbnails {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-tabs {
+    padding: 16px;
+  }
+
+  .product-tabs-nav {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    gap: 0;
+  }
+
+  .product-tab-btn {
+    white-space: nowrap;
+    padding: 10px 16px;
+    font-size: 14px;
+  }
+
+  .myaccount-tabs {
+    margin-bottom: 20px;
+  }
+
+  .myaccount-tabs ul {
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+  }
+
+  .myaccount-tabs ul::-webkit-scrollbar {
+    display: none;
+  }
+
+  .myaccount-tabs li a {
+    padding: 10px 14px;
+    font-size: 13px;
+    gap: 6px;
+  }
+
+  .myaccount-tab-icon {
+    width: 16px;
+    height: 16px;
+  }
+
+  .myaccount-stats {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .myaccount-stat-card {
+    padding: 10px 0;
+    gap: 10px;
+  }
+
+  .myaccount-stat-icon {
+    width: 36px;
+    height: 36px;
+  }
+
+  .myaccount-stat-value {
+    font-size: 18px;
+  }
+
+  .myaccount-books-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .myaccount-section {
+    padding: 12px 0;
+    margin-bottom: 12px;
+    overflow: hidden;
+  }
+
+  .myaccount-section-header {
+    flex-wrap: wrap;
+    gap: 4px;
+    margin-bottom: 12px;
+  }
+
+  .myaccount-hero {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .myaccount-hero-info {
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+  }
+
+  .myaccount-hero-avatar {
+    width: 44px;
+    height: 44px;
+  }
+
+  .myaccount-hero-title {
+    font-size: 20px;
+  }
+
+  .myaccount-hero-sub {
+    font-size: 14px;
+  }
+
+  .myaccount-hero-date {
+    display: none;
+  }
+
+  .myaccount-welcome-title {
+    font-size: 20px;
+  }
+
+  .myaccount-welcome-sub {
+    font-size: 14px;
+  }
+
+  .myaccount-welcome-date {
+    display: none;
+  }
+
+  .myaccount-order-item {
+    padding: 10px 0;
+  }
+
+  .myaccount-order-number {
+    font-size: 14px;
+  }
+
+  .myaccount-order-total {
+    font-size: 14px;
+  }
+
+  .order-card {
+    padding: 14px 16px;
+  }
+
+  .order-card-number {
+    font-size: 14px;
+  }
+
+  .order-card-row--actions {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .order-card-action {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .myaccount-form {
+    padding: 16px;
+  }
+
+  .myaccount-form h2 {
+    font-size: 17px;
+  }
+
+  .myaccount-form-actions {
+    flex-direction: column;
+  }
+
+  .myaccount-form-actions button[type="submit"] {
+    width: 100%;
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .myaccount-section-header {
+    flex-wrap: wrap;
+    gap: 4px;
+  }
+}
+
+/* Lost password / account form inputs */
+.woocommerce-Input.input-text,
+.woocommerce form .form-row input.input-text,
+.woocommerce form .form-row textarea {
+  width: 100%;
+  padding: 12px 16px;
+  font-size: 15px;
+  font-family: var(--font);
+  color: var(--color-heading);
+  background: var(--white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  outline: none;
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.woocommerce-Input.input-text:focus,
+.woocommerce form .form-row input.input-text:focus {
+  border-color: var(--glacier-blue);
+  box-shadow: 0 0 0 3px rgba(var(--glacier-blue-rgb), 0.15);
+}
+
+/* Reset password submit button */
+.woocommerce-Button.button,
+.woocommerce button.button {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  padding: 12px 28px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: var(--radius-sm);
+  background: var(--glacier-blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  transition: background 0.2s, transform 0.2s;
+  font-family: var(--font);
+}
+
+.woocommerce-Button.button:hover,
+.woocommerce button.button:hover {
+  background: var(--deep-lake);
+  transform: translateY(-1px);
+}
+
+/* Spacing between input and submit button on lost/reset password forms */
+.woocommerce-ResetPassword .woocommerce-Button.button {
+  margin: 29px 0 0 25px;
+}
+
+/* ========================================
+   SCROLL REVEAL — Parallax & Fade-in
+   ========================================= */
+
+.reveal {
+  opacity: 0;
+  transform: translateY(30px) scale(0.97);
+  transition: opacity 0.7s cubic-bezier(0.16, 1, 0.3, 1),
+              transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.reveal.in-view {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+
+.reveal-delay-1 { transition-delay: 0.1s; }
+.reveal-delay-2 { transition-delay: 0.2s; }
+.reveal-delay-3 { transition-delay: 0.3s; }
+.reveal-delay-4 { transition-delay: 0.4s; }
+.reveal-delay-5 { transition-delay: 0.5s; }
+
+/* CTA subtle pattern overlay + parallax bg */
+.cta-section {
+  background-image: radial-gradient(rgba(255, 255, 255, 0.06) 1px, transparent 1px);
+  background-size: 24px 24px;
+}
+
+@media (min-width: 769px) {
+  .cta-section {
+    background-attachment: fixed;
+  }
+}
+
+/* ========================================
+   WISHLIST — Card Grid Design
+   Heart: #e63946 (vivid red)
+   Theme CSS variables for auto dark mode
+======================================== */
+
+/* --- Wishlist toggle button (product cards) --- */
+.company-wishlist-btn {
+    background: none;
+    border: none;
+    cursor: pointer;
+    line-height: 1;
+    padding: 6px;
+    border-radius: 50%;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.2s, color 0.2s, background 0.2s;
+    color: var(--gray-400);
+    flex-shrink: 0;
+}
+.company-wishlist-btn:hover {
+    transform: scale(1.15);
+    color: #e63946;
+    background: rgba(230, 57, 70, 0.08);
+}
+.company-wishlist-btn.active {
+    color: #e63946;
+}
+.company-wishlist-btn-icon {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Wishlist button on product image overlay */
+.book-cover .company-wishlist-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255,255,255,0.92);
+    border-radius: 50%;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.15);
+    z-index: 5;
+}
+.book-cover .company-wishlist-btn.active { color: #e63946; }
+
+.company-wishlist-btn--image {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(255,255,255,0.92);
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+    padding: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+    z-index: 3;
+}
+
+/* Wishlist link on cart page */
+.company-wishlist-cart-link {
+    display: inline-flex !important;
+    align-items: center;
+    gap: 6px;
+}
+
+/* --- Wishlist page wrapper --- */
+.company-wishlist-wrap {
+    padding: 0;
+}
+
+/* --- Empty state --- */
+.company-wishlist-empty {
+    text-align: center;
+    padding: 60px 20px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.company-wishlist-empty-icon {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 16px;
+    color: var(--gray-300);
+    opacity: 0.6;
+}
+.company-wishlist-empty-icon svg {
+    width: 48px;
+    height: 48px;
+}
+.company-wishlist-empty h3 {
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--color-heading);
+    margin: 0 0 8px;
+}
+.company-wishlist-empty p {
+    font-size: 15px;
+    color: var(--color-body);
+    margin: 0 0 24px;
+    line-height: 1.6;
+}
+.company-wishlist-empty .button {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    padding: 12px 28px;
+    background: var(--accent);
+    color: #fff;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-weight: 600;
+    font-size: 15px;
+    text-decoration: none;
+    cursor: pointer;
+    transition: background 0.2s, transform 0.2s;
+}
+.company-wishlist-empty .button:hover {
+    background: var(--accent-hover);
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   CARD GRID
+======================================== */
+.company-wishlist-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+}
+
+/* --- Wishlist Card --- */
+.company-wishlist-card {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+    padding: 16px;
+    background: var(--color-card-bg);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-md);
+    transition: border-color 0.2s, box-shadow 0.2s;
+    position: relative;
+}
+.company-wishlist-card:hover {
+    border-color: var(--gray-200);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.04), 0 8px 20px rgba(40,53,67,0.06);
+}
+
+/* Image */
+.company-wishlist-card-img {
+    flex-shrink: 0;
+    position: relative;
+}
+.company-wishlist-card-thumb {
+    display: block;
+    border-radius: var(--radius-sm);
+    overflow: hidden;
+    line-height: 0;
+}
+.company-wishlist-card-thumb-img {
+    width: 80px;
+    height: 106px;
+    object-fit: cover;
+    border-radius: var(--radius-sm);
+    display: block;
+}
+
+/* Heart over image — vivid red #e63946 */
+.company-wishlist-card-img .company-wishlist-btn {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 32px;
+    height: 32px;
+    padding: 0;
+    background: #fff;
+    border: 1px solid var(--color-border);
+    border-radius: 50%;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.08);
+    color: #e63946;
+}
+.company-wishlist-card-img .company-wishlist-btn:hover {
+    background: #fef2f2;
+    border-color: #e63946;
+    transform: scale(1.1);
+    color: #e63946;
+}
+
+/* Body */
+.company-wishlist-card-body {
+    flex: 1;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+.company-wishlist-card-title {
+    font-size: 15px;
+    font-weight: 600;
+    color: var(--color-heading);
+    text-decoration: none;
+    line-height: 1.35;
+    overflow-wrap: anywhere;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+.company-wishlist-card-title:hover {
+    color: var(--glacier-blue);
+}
+
+/* Price */
+.company-wishlist-card-price {
+    font-size: 14px;
+    color: var(--color-heading);
+    font-weight: 600;
+    line-height: 1.4;
+}
+.company-wishlist-card-price del {
+    color: var(--gray-500);
+    font-size: 12px;
+    font-weight: 400;
+}
+.company-wishlist-card-price ins {
+    text-decoration: none;
+    color: var(--accent);
+    font-weight: 700;
+}
+.company-wishlist-card-price .woocommerce-Price-amount {
+    white-space: nowrap;
+}
+
+/* Stock badge */
+.company-stock-badge {
+    display: inline-block;
+    padding: 3px 10px;
+    border-radius: 10px;
+    font-size: 11px;
+    font-weight: 600;
+    letter-spacing: 0.3px;
+    width: fit-content;
+}
+.company-stock-badge.in-stock {
+    background: rgba(var(--success-rgb), 0.12);
+    color: var(--success);
+}
+.company-stock-badge.out-of-stock {
+    background: rgba(var(--error-rgb), 0.10);
+    color: var(--error);
+}
+
+/* Actions */
+.company-wishlist-card-actions {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    align-self: stretch;
+}
+
+/* Add to Cart button */
+.company-wishlist-add-cart.button {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 10px 16px;
+    border-radius: var(--radius-sm);
+    font-size: 13px;
+    font-weight: 600;
+    background: var(--deep-lake);
+    color: #fff !important;
+    border: none;
+    cursor: pointer;
+    text-decoration: none;
+    transition: background 0.2s, transform 0.2s;
+    white-space: nowrap;
+    line-height: 1;
+}
+.company-wishlist-add-cart.button:hover {
+    background: var(--glacier-blue);
+    transform: translateY(-1px);
+    color: #fff !important;
+}
+
+/* ========================================
+   RESPONSIVE
+======================================== */
+@media (max-width: 900px) {
+    .company-wishlist-card {
+        gap: 14px;
+        padding: 14px;
+    }
+    .company-wishlist-card-thumb-img {
+        width: 72px;
+        height: 96px;
+    }
+    .company-wishlist-card-img .company-wishlist-btn {
+        top: -4px;
+        right: -4px;
+        width: 28px;
+        height: 28px;
+    }
+}
+
+@media (max-width: 768px) {
+    .company-wishlist-grid {
+        gap: 10px;
+    }
+
+    .company-wishlist-card {
+        padding: 12px;
+        gap: 12px;
+        flex-wrap: wrap;
+    }
+
+    .company-wishlist-card-thumb-img {
+        width: 64px;
+        height: 85px;
+    }
+
+    .company-wishlist-card-img .company-wishlist-btn {
+        top: -4px;
+        right: -4px;
+        width: 28px;
+        height: 28px;
+    }
+
+    .company-wishlist-card-body {
+        flex: 1 1 calc(100% - 88px);
+    }
+
+    .company-wishlist-card-actions {
+        flex-basis: 100%;
+        align-self: auto;
+    }
+
+    .company-wishlist-add-cart.button {
+        width: 100%;
+        justify-content: center;
+        padding: 12px 16px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 400px) {
+    .company-wishlist-empty {
+        padding: 40px 16px;
+    }
+    .company-wishlist-empty h3 {
+        font-size: 18px;
+    }
+
+    .company-wishlist-card {
+        padding: 10px;
+        gap: 10px;
+    }
+
+    .company-wishlist-card-thumb-img {
+        width: 56px;
+        height: 74px;
+    }
+
+    .company-wishlist-card-title {
+        font-size: 13px;
+    }
+
+    .company-wishlist-card-price {
+        font-size: 13px;
+    }
+
+    .company-wishlist-card-body {
+        flex: 1 1 calc(100% - 76px);
+    }
+
+    .company-wishlist-add-cart.button {
+        padding: 10px 14px;
+        font-size: 13px;
+    }
+}
+

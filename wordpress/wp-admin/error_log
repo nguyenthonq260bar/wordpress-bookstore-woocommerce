@@ -1,0 +1,1 @@
+[27-Jun-2026 15:29:01 UTC] WordPress database error Out of resources when opening file '/dev/shm/#sql-temptable-1d1d78-2c5e7-598f.MAI' (Errcode: 24 "Too many open files") for query SHOW FULL COLUMNS FROM `WyZ_defaultoptions` made by do_action('admin_init'), WP_Hook->do_action, WP_Hook->apply_filters, PMXE_Plugin->fix_db_schema, update_option

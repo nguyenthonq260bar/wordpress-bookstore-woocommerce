@@ -1,0 +1,137 @@
+.company-search-dropdown {
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 0;
+  right: 0;
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  max-height: 420px;
+  overflow-y: auto;
+  z-index: 10000;
+}
+
+.company-search-loading {
+  padding: 24px;
+  text-align: center;
+  color: #6172B0;
+  font-size: 14px;
+}
+
+.company-search-empty {
+  padding: 32px 24px;
+  text-align: center;
+  color: #6172B0;
+  font-size: 14px;
+}
+
+.company-search-item {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 10px 16px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.company-search-item:hover {
+  background: #f5f6fa;
+}
+
+.company-search-item + .company-search-item {
+  border-top: 1px solid #eef0f5;
+}
+
+.company-search-item-img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+  flex-shrink: 0;
+}
+
+.company-search-item-info {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  min-width: 0;
+}
+
+.company-search-item-name {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1a1a2e;
+  line-height: 1.3;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.company-search-item-name mark {
+  background: #fef3c7;
+  color: #1a1a2e;
+  padding: 0 2px;
+  border-radius: 2px;
+}
+
+.company-search-item-price {
+  font-size: 13px;
+  color: #6172B0;
+}
+
+.company-search-view-all {
+  display: block;
+  padding: 12px 16px;
+  text-align: center;
+  font-size: 13px;
+  font-weight: 600;
+  color: #f0883e;
+  text-decoration: none;
+  border-top: 1px solid #eef0f5;
+  transition: background 0.15s;
+}
+
+.company-search-view-all:hover {
+  background: #f5f6fa;
+}
+
+/* Dark mode */
+body.theme-dark .company-search-dropdown {
+  background: #1e1e2f;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.4);
+}
+
+body.theme-dark .company-search-item:hover {
+  background: #2a2a3d;
+}
+
+body.theme-dark .company-search-item + .company-search-item {
+  border-color: #2a2a3d;
+}
+
+body.theme-dark .company-search-item-name {
+  color: #e8e8f0;
+}
+
+body.theme-dark .company-search-item-name mark {
+  background: #3d3a1a;
+  color: #e8e8f0;
+}
+
+body.theme-dark .company-search-item-price {
+  color: #9ca3c4;
+}
+
+body.theme-dark .company-search-view-all {
+  color: #f0a35e;
+  border-color: #2a2a3d;
+}
+
+body.theme-dark .company-search-view-all:hover {
+  background: #2a2a3d;
+}
+
+body.theme-dark .company-search-loading,
+body.theme-dark .company-search-empty {
+  color: #9ca3c4;
+}

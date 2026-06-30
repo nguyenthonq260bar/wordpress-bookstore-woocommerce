@@ -1,0 +1,206 @@
+msgid ""
+msgstr ""
+"Project-Id-Version: The First Day In Your Life\n"
+"POT-Creation-Date: 2026-01-26\n"
+"PO-Revision-Date: 2026-01-26\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: vi\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=1; plural=0;\n"
+"X-Generator: manual\n"
+
+#: functions.php:26
+msgid "Primary Menu"
+msgstr "Menu Chính"
+
+#: functions.php:27
+msgid "Footer Bottom Links"
+msgstr "Liên Kết Cuối Trang"
+
+#: functions.php:49 functions.php:57 functions.php:65 functions.php:73
+msgid "Footer Column %d"
+msgstr "Cột Footer %d"
+
+#: functions.php:83
+msgid "Shop Sidebar"
+msgstr "Thanh Bên Cửa Hàng"
+
+#: functions.php:93
+msgid "Blog Sidebar"
+msgstr "Thanh Bên Blog"
+
+#: functions.php:295
+msgid "Passwords do not match."
+msgstr "Mật khẩu không khớp."
+
+#: functions.php:358
+msgid "Search Results: %s"
+msgstr "Kết Quả Tìm Kiếm: %s"
+
+#: functions.php:361
+msgid "Found %d result..."
+msgid_plural "Found %d results..."
+msgstr[0] "Tìm thấy %d kết quả..."
+
+#: functions.php:364
+msgid "Page Not Found"
+msgstr "Không Tìm Thấy Trang"
+
+#: functions.php:365
+msgid "Sorry, the page you're looking for doesn't exist."
+msgstr "Xin lỗi, trang bạn đang tìm không tồn tại."
+
+#: functions.php:375
+msgid "Browse our curated collection of books and find your next great read."
+msgstr "Duyệt qua bộ sưu tập sách của chúng tôi và tìm cuốn sách tiếp theo."
+
+#: functions.php:424
+msgid "Hero Banner"
+msgstr "Biểu Ngữ Hero"
+
+#: functions.php:436
+msgid "Background Image"
+msgstr "Ảnh Nền"
+
+#: functions.php:437
+msgid "Full-width background behind the hero content. Recommended: 1920 × 800px."
+msgstr "Ảnh nền toàn chiều rộng phía sau nội dung hero. Khuyên dùng: 1920 × 800px."
+
+#: functions.php:449
+msgid "Banner Image"
+msgstr "Ảnh Biểu Ngữ"
+
+#: functions.php:450
+msgid "Recommended size: 1920 × 700px. If not set, the default illustration is shown."
+msgstr "Kích thước khuyên dùng: 1920 × 700px. Nếu không đặt, hình minh họa mặc định sẽ hiển thị."
+
+#: functions.php:462
+msgid "Heading"
+msgstr "Tiêu Đề"
+
+#: functions.php:473
+msgid "Heading Color"
+msgstr "Màu Tiêu Đề"
+
+#: functions.php:474 functions.php:485
+msgid "Only applies when a background image is set."
+msgstr "Chỉ áp dụng khi có ảnh nền."
+
+#: functions.php:484
+msgid "Subtitle Color"
+msgstr "Màu Phụ Đề"
+
+#: functions.php:496
+msgid "Subtitle"
+msgstr "Phụ Đề"
+
+#: functions.php:508
+msgid "Button 1 Text"
+msgstr "Văn Bản Nút 1"
+
+#: functions.php:519
+msgid "Button 1 URL"
+msgstr "URL Nút 1"
+
+#: functions.php:534
+msgid "Button 2 Text"
+msgstr "Văn Bản Nút 2"
+
+#: functions.php:545
+msgid "Button 2 URL"
+msgstr "URL Nút 2"
+
+#: functions.php:558
+msgid "Page Banner"
+msgstr "Biểu Ngữ Trang"
+
+#: functions.php:569
+msgid "Default Banner Image"
+msgstr "Ảnh Biểu Ngữ Mặc Định"
+
+#: functions.php:570
+msgid "Fallback image for pages without a featured image."
+msgstr "Ảnh dự phòng cho các trang không có ảnh đại diện."
+
+#: functions.php:582
+msgid "Service Benefits"
+msgstr "Lợi Ích Dịch Vụ"
+
+#: functions.php:614
+msgid "Benefit %d"
+msgstr "Lợi ích %d"
+
+#: functions.php:624
+msgid "Title %d"
+msgstr "Tiêu đề %d"
+
+#: functions.php:634
+msgid "Description %d"
+msgstr "Mô tả %d"
+
+#: functions.php:644
+msgid "Icon %d"
+msgstr "Biểu tượng %d"
+
+#: searchform.php:10
+msgid "Search..."
+msgstr "Tìm kiếm..."
+
+#: searchform.php:11
+msgid "Search"
+msgstr "Tìm kiếm"
+
+#: search.php:57 archive.php:59
+msgid "&laquo; Previous"
+msgstr "&laquo; Trước"
+
+#: search.php:58 archive.php:60
+msgid "Next &raquo;"
+msgstr "Sau &raquo;"
+
+#: search.php:65
+msgid "No results found for your search. Please try different keywords."
+msgstr "Không tìm thấy kết quả cho tìm kiếm của bạn. Vui lòng thử từ khóa khác."
+
+#: search.php:68 archive.php:72
+msgid "Back to Home"
+msgstr "Về Trang Chủ"
+
+#: archive.php:71
+msgid "No posts found."
+msgstr "Không có bài viết nào."
+
+#: content-product.php:37 index.php:99
+msgid "Quick View"
+msgstr "Xem Nhanh"
+
+#: content-product.php:45
+msgid "Categories:"
+msgstr "Danh mục:"
+
+#: content-product.php:48
+msgid "Tags:"
+msgstr "Thẻ:"
+
+#: form-login.php:12
+msgid "Login"
+msgstr "Đăng Nhập"
+
+#: form-login.php:13
+msgid "Register"
+msgstr "Đăng Ký"
+
+#: form-login.php:68
+msgid "Confirm password"
+msgstr "Xác nhận mật khẩu"
+
+#: submit-testimonial.php:12
+msgid "Submit Your Testimonial"
+msgstr "Gửi Đánh Giá"
+
+#: submit-testimonial.php:15
+msgid "Share your experience with our community."
+msgstr "Chia sẻ trải nghiệm của bạn với cộng đồng."

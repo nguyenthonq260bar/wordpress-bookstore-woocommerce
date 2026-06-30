@@ -1,0 +1,7 @@
+/* Company WooCommerce — Filter
+   Minimal, theme should override */
+.shop-content.loading {
+    opacity: 0.5;
+    transition: opacity 0.2s;
+    pointer-events: none;
+}
